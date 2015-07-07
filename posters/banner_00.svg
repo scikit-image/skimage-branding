@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="36in"
-   height="24in"
-   viewBox="0 0 3240 2160"
+   width="35.309769in"
+   height="6.3969555in"
+   viewBox="0 0 3177.8792 575.72599"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -32,18 +32,22 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="2187.5402"
-     inkscape:cy="843.59005"
+     inkscape:cx="1473.3319"
+     inkscape:cy="-16.919062"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
      showguides="false"
-     inkscape:window-width="1716"
-     inkscape:window-height="1393"
-     inkscape:window-x="3320"
+     inkscape:window-width="1596"
+     inkscape:window-height="853"
+     inkscape:window-x="0"
      inkscape:window-y="22"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -60,60 +64,46 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,1107.6378)">
+     transform="translate(-41.446716,383.87292)">
+    <image
+       sodipodi:absref="/home/stefan/akad/projekte/skimage-branding/logo/green_orange_snake.png"
+       xlink:href="file:///home/stefan/akad/projekte/skimage-branding/logo/green_orange_snake.png"
+       y="-297.65848"
+       x="127.45808"
+       id="image3147"
+       height="407.3378"
+       width="407.3378" />
     <g
-       id="layer1-8"
-       inkscape:label="Layer 1"
-       transform="matrix(3.0787912,0,0,3.0787912,100.22223,-317.57941)">
-      <image
-         width="132.30446"
-         height="132.30446"
-         id="image3147"
-         x="8.8462782"
-         y="6.4703732"
-         xlink:href="file:///home/stefan/akad/projekte/skimage-branding/logo/green_orange_snake.png"
-         sodipodi:absref="/home/stefan/akad/projekte/skimage-branding/logo/green_orange_snake.png" />
-      <g
-         transform="translate(-105.05586,-195.43585)"
-         id="g3158">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:125%;font-family:Verdana;-inkscape-font-specification:Verdana;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none"
-           x="261.22247"
-           y="278.58533"
-           id="text3150"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3152"
-             x="261.22247"
-             y="278.58533"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">scikit-image</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:125%;font-family:Verdana;-inkscape-font-specification:Verdana;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none"
-           x="262.52374"
-           y="306.86957"
-           id="text3154"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan3156"
-             x="262.52374"
-             y="306.86957"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.5px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">image processing in python</tspan></text>
-      </g>
+       id="g4176"
+       transform="translate(0,-18.182726)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3150"
+         y="-61.579536"
+         x="581.02661"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:73.89099121px;line-height:125%;font-family:Verdana;-inkscape-font-specification:Verdana;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:215.51538086px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+           y="-61.579536"
+           x="581.02661"
+           id="tspan3152"
+           sodipodi:role="line">scikit-image</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3154"
+         y="61.867229"
+         x="585.03296"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:73.89099121px;line-height:125%;font-family:Verdana;-inkscape-font-specification:Verdana;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:81.58796692px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+           y="61.867229"
+           x="585.03296"
+           id="tspan3156"
+           sodipodi:role="line">image processing in python</tspan></text>
     </g>
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:10.60000038;stroke-opacity:1"
-       id="rect4292"
-       width="3636.5491"
-       height="589.92908"
-       x="-101.01525"
-       y="-388.95413"
-       rx="0"
-       ry="0" />
     <g
        id="g4863"
-       transform="matrix(1.1442062,0,0,1.1442062,-385.46868,-37.452896)">
+       transform="matrix(1.1442062,0,0,1.1442062,-385.46868,-37.452889)">
       <text
          sodipodi:linespacing="190%"
          id="text4205"
