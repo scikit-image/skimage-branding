@@ -159,7 +159,15 @@ if __name__ == '__main__':
                             whiten=(False, True))
         plt.savefig('green_orange_snake.png', bbox_inches='tight')
 
+    def plot_favicon():
+        f, ax = plt.subplots()
+        prepare_axes(ax)
+        plot_colorized_logo(snake, green_orange, edges='dark',
+                            whiten=(False, True))
+        plt.savefig('favicon.png', bbox_inches='tight', dpi=36/5.)
+
     plot_all()
     plot_official_logo()
+    plot_favicon()
 
     plt.show()
