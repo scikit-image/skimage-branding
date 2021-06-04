@@ -98,7 +98,8 @@ snake.edges = rgb2gray(snake.edges)
 # Demo plotting functions
 # =======================
 
-def plot_colorized_logo(logo, color, edges='light', whiten=False):
+def plot_colorized_logo(logo, color, edges='light', whiten=False,
+                        transparent_corners=False):
     """Convenience function to plot artificially-colored logo.
 
     The upper-left half of the logo is an edge filtered image, while the
@@ -109,10 +110,12 @@ def plot_colorized_logo(logo, color, edges='light', whiten=False):
     logo : LogoBase instance
     color : length-3 sequence of floats or 2 length-3 sequences
         RGB color spec. Float values should be between 0 and 1.
-    edges : {'light'|'dark'}
+    edges : {'light'|'dark'}, optional
         Specifies whether Sobel edges are drawn light or dark
-    whiten : bool or 2 bools
+    whiten : bool or 2 bools, optional
         If True, a color value less than 1 increases the image intensity.
+    transparent_corners : bool, optional
+        If True, set the corners to be transparent.
     """
     if not hasattr(color[0], '__iter__'):
         color = [color] * 2  # use same color for upper-left & lower-right
@@ -131,6 +134,11 @@ def plot_colorized_logo(logo, color, edges='light', whiten=False):
     logo_img = colorize(logo.image, color[1], whiten=whiten[1])
     image[mask_img] = logo_img[mask_img]
     image[mask_edge] = logo_edge[mask_edge]
+
+    if transparent_corners:
+        # add alpha channel with alpha=0.0 in the corners
+        alpha = (logo.mask_1 | logo.mask_2).astype(image.dtype)
+        image = np.concatenate((image, alpha[..., np.newaxis]), axis=-1)
 
     logo.plot_curve(lw=5, color='w')  # plot snake curve on current axes
     plt.imshow(image)
@@ -159,6 +167,14 @@ if __name__ == '__main__':
                             whiten=(False, True))
         plt.savefig('green_orange_snake.png', bbox_inches='tight')
 
+    def plot_official_logo_with_transparent_corners():
+        f, ax = plt.subplots()
+        prepare_axes(ax)
+        plot_colorized_logo(snake, green_orange, edges='dark',
+                            whiten=(False, True), transparent_corners=True)
+        plt.savefig('green_orange_snake_transparent.png', bbox_inches='tight',
+                    transparent=True)
+
     def plot_favicon():
         f, ax = plt.subplots()
         prepare_axes(ax)
@@ -168,6 +184,7 @@ if __name__ == '__main__':
 
     plot_all()
     plot_official_logo()
+    plot_official_logo_with_transparent_corners()
     plot_favicon()
 
     plt.show()
